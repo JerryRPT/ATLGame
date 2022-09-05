@@ -1,0 +1,98 @@
+/* CSS for /projects */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+  font-family: "Roboto";
+  font-size: "25px";
+  color: #ffffff;
+  text-align: left;
+  background-color: #1c1c1c;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.text-center {
+  text-align: center;
+}
+.game-link {
+  height: 400px;
+  width: 300px;
+}
+.game-tile {
+  background-color: #1d1c1c;
+  height: 400px;
+  width: 300px;
+  border-radius: 15px;
+  -webkit-animation: scale-down-center 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-down-center 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.game-tile:hover {
+  text-decoration: none;
+  -webkit-animation: scale-up-center 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@-webkit-keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.game-icon {
+  border-radius: 15px;
+  width: 300px;
+  height: 300px;
+}
+.game-title {
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Roboto";
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  order: 0;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  padding: 10px;
+}

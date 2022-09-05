@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+title,
+title::before,
+title::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #1bf0ff;
+  --color-secondary: #55a4ff;
+  --color-tertiary: #00a2ff;
+  --color-quaternary: rgb(0, 147, 245);
+  --color-quinary: #037ff3;
+  /*
+  --color-primary: #5192ED;
+  --color-secondary: #69A1F0;
+  --color-tertiary: #7EAEF2;
+  --color-quaternary: #90BAF5;
+  --color-quinary: #A2C4F5;
+  */
+}
+
+
+.content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.text_shadows {
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  font-family: bungee, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: calc(2rem + 4vw);
+  text-align: center;
+  margin: 0;
+  color: var(--color-primary);
+  animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  letter-spacing: 0.4rem;
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  20% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  40% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  50% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  80% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  90% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+body {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  font-family: "Roboto";
+}
+h1 {
+  text-align: center;
+}
+#title {
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-family: "Roboto";
+  text-align: center;
+  padding-top: 25%;
+}
+#subtitle {
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#intro {
+  padding-top: 20%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Roboto";
+}
+.text-center {
+  text-align: center;
+}
+.card-img-top {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  padding-top: 10px;
+}
+.card {
+  background: #383a3d;
+  box-shadow: 0 8px 15px -7px #262727;
+  margin: 0 20px;
+  padding-left: 10px;
+  border-radius: 20px;
+  border: 0;
+  color: #3b3b3b;
+  width: 300px;
+  height: 450px;
+}
+a {
+  text-decoration: none;
+  color: #0084ff;
+}
+.card-text {
+  height: 260.6px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.text-center {
+  text-align: center;
+  color: white; 
+  font-size: 30;
+}
+#footer {
+  background-color: #1a1a1a;
+  height: 300px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+}
+#gs {
+  background-color: #00b4eb;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+}
+.video {
+  text-align: center;
+}
